@@ -1,0 +1,61 @@
+{
+  "name": "garage-pro-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "classnames": "^2.5.1",
+    "date-fns": "^2.29.3",
+    "fluent-ffmpeg": "^2.1.3",
+    "framer-motion": "^7.2.1",
+    "jwt-decode": "^3.1.2",
+    "libphonenumber-js": "^1.12.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hls-player": "^3.0.7",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.4.0",
+    "react-is": "^19.1.0",
+    "react-modal": "^3.15.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^11.0.5",
+    "react-webcam": "^7.0.1",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd garagepro-backend && PORT=3000 npm start",
+    "start:frontend": "PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "react-scripts": "^5.0.1"
+  }
+}
